@@ -17,7 +17,7 @@ const Profile = () => (
 
     <div className="section-text">
       <div className="profile-text">
-        <p className="profile-intro">Hello, I'm</p>
+        <p className="profile-intro">Hello, I am</p>
         <h1 className="profile-title">Abhijith</h1>
         <p className="profile-role">Frontend Developer</p>
           <p className="profile-description">
