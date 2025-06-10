@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  min-height: 80dvh;
+  box-sizing: border-box;
+  padding: 2rem 4vw;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.profile-text {
+  max-width: 600px;
+}
+
+.profile-intro {
+  font-size: 1.5rem;
+  color: #aaa;
+  margin: 0;
+  font-weight: 500;
+}
+
+.profile-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.profile-role {
+  font-size: 1.6rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.profile-btn {
+  margin-top: 1rem;
+}
+
+.resume {
+  padding: 0.75rem 2rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.resume:hover {
+  background: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.social-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-container img {
+  width: 48px;
+  height: 48px;
+  filter: invert(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.social-container img:hover {
+  transform: scale(1.1);
+  filter: invert(0.5) sepia(1) hue-rotate(180deg) saturate(2);
+}
+
+/* Responsive: Stack vertically on smaller screens */
+@media (max-width: 900px) {
+  .profile {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 2rem 2vw;
+    text-align: center;
+  }
+
+  .section-text {
+    padding-left: 0;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .profile-text {
+    max-width: 100%;
+  }
+
+  .profile-btn,
+  .social-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-container img {
+    width: 60vw;
+    max-width: 300px;
+  }
+}
+
+.profile-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 1rem;
+}

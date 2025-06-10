@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
+
+.contact-section {
+  padding: 3rem 4vw;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.contact-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: left; /* left align */
+  position: relative;
+  padding-left: 1.2rem; /* space for vertical bar */
+  cursor: default;
+  user-select: none;
+}
+
+.contact-section h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 6px;
+  background-color: var(--primary-color, #1a73e8);
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section h2:hover::before {
+  background-color:  var(--primary-color, #1a73e8);
+}
+
+.contact-info {
+  padding-left: 5vw;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: white;
+  max-width: none;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+}
+
+.contact-info a {
+  color:  var(--primary-color, #1a73e8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color:  var(--primary-color, #1a73e8);
+  text-decoration: underline;
+}

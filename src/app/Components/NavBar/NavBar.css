@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #0072b1; /* default theme color */
+  --text-color: #0072b1;    /* for logo and nav text color if needed */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  padding-bottom: 4px; /* space for underline */
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+  border-radius: 1px;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.nav-links li a:hover {
+  color: var(--primary-color); /* text changes on hover */
+}
+
+/* Theme switcher styles */
+.theme-switcher {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.color-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.color-button:hover {
+  transform: scale(1.2);
+  border-color: var(--primary-color);
+}
+
+.theme-switcher {
+    justify-content: center;
+}
+
+.nav-links {
+    justify-content: flex-end;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.logo {
+    color: var(--primary-color);
+}
