@@ -7,7 +7,7 @@ const Profile = () => (
   <section className="profile">
     <div className="image-container">
       <Image 
-        src="/profile.jpg" 
+        src="/profile.JPG" 
         alt="Profile" 
         width={500} 
         height={500} 
