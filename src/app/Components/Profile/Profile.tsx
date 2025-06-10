@@ -7,7 +7,7 @@ const Profile = () => (
   <section className="profile">
     <div className="image-container">
       <Image 
-        src="/images/profile.jpg" 
+        src="/profile.jpg" 
         alt="Profile" 
         width={500} 
         height={500} 
@@ -38,15 +38,15 @@ const Profile = () => (
 
       <div className="social-container">
    <a href="https://www.linkedin.com/in/b-e-abhijith-560584192/" target="_blank" rel="noopener noreferrer">
-    <Image src="/images/linked.png" alt="LinkedIn" width={48} height={48} />
+    <Image src="/linked.png" alt="LinkedIn" width={48} height={48} />
   </a>
   
   <a href="mailto:abhi.eswar.250@example.com" target="_blank" rel="noopener noreferrer">
-    <Image src="/images/mail.png" alt="Gmail" width={48} height={48} />
+    <Image src="/mail.png" alt="Gmail" width={48} height={48} />
   </a>
   
   <a href="https://www.instagram.com/awebhi" target="_blank" rel="noopener noreferrer">
-    <Image src="/images/inst.png" alt="Instagram" width={48} height={48} />
+    <Image src="/inst.png" alt="Instagram" width={48} height={48} />
   </a>
       </div>
     </div>
