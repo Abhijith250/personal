@@ -27,7 +27,7 @@ const Profile = () => (
         Experienced in React, TypeScript, and GraphQL, I enjoy solving real-world problems through intuitive UIs.
       </p>
       <p className="profile-description">
-        Outside of coding, you’ll often find me exploring new technologies, following design trends, or hiking in nature.
+        Outside of coding, you will often find me exploring new technologies, following design trends, or travelling.
       </p>
         <div className="profile-btn">
           <button className="resume" onClick={() => window.open('/abhi-resume.pdf')}>

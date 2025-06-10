@@ -4,7 +4,7 @@ import './NavBar.css';
 
 const NavBar = () => {
 
-  const setThemeColor = (color: any) => {
+  const setThemeColor = (color: string) => {
     document.documentElement.style.setProperty('--primary-color', color);
     document.documentElement.style.setProperty('--text-color', color);
 };
