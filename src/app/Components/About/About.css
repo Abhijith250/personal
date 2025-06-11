@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
 
 .about-section {
+  width: 100%;
   padding: 3rem 4vw;
   font-family: 'Roboto', sans-serif;
   color: white;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
 }
 
 .about-section h2 {
@@ -13,9 +16,9 @@
   color: white;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  text-align: left; /* left align */
+  text-align: left;
   position: relative;
-  padding-left: 1.2rem; /* space for vertical bar */
+  padding-left: 1.2rem;
   cursor: default;
   user-select: none;
 }
@@ -27,25 +30,56 @@
   top: 0;
   height: 100%;
   width: 6px;
-  background-color:  var(--primary-color, #1a73e8);
+  background-color: var(--primary-color, #1a73e8);
   border-radius: 3px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, height 0.3s ease;
 }
 
 .about-section h2:hover::before {
-  background-color:  var(--primary-color, #1a73e8);
+  background-color: #155ab6;
+  height: 110%;
 }
 
 .about-section p {
-  margin-left: 1.2rem; /* indent paragraph slightly to align with heading text */
   font-size: 1.2rem;
   line-height: 1.7;
-  max-width: none;
   color: white;
   text-align: left;
-  transition: color 0.3s ease;
+  padding-left: 1.2rem; /* align with h2 text */
+  margin: 0;
+  width: 100%;
+  max-width: none; /* remove restriction */
 }
 
-/* .about-section p:hover {
-  color:  var(--primary-color, #1a73e8);
-} */
+/* Optional hover effect */
+/*
+.about-section p:hover {
+  color: var(--primary-color, #1a73e8);
+}
+*/
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 5vw;
+  }
+
+  .about-section h2 {
+    font-size: 2.4rem;
+  }
+
+  .about-section p {
+    font-size: 1.05rem;
+    padding-left: 1rem;
+  }
+}

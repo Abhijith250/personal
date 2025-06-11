@@ -65,6 +65,13 @@
   font-weight: 400;
 }
 
+.profile-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
 .profile-btn {
   margin-top: 1rem;
 }
@@ -82,7 +89,6 @@
 }
 
 .resume:hover {
-  background: var(--primary-color);
   transform: scale(1.05);
 }
 
@@ -105,11 +111,10 @@
   filter: invert(0.5) sepia(1) hue-rotate(180deg) saturate(2);
 }
 
-/* Responsive: Stack vertically on smaller screens */
+/* Responsive Breakpoint - Tablets & Phones */
 @media (max-width: 900px) {
   .profile {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
     padding: 2rem 2vw;
     text-align: center;
   }
@@ -120,14 +125,26 @@
     gap: 1.5rem;
   }
 
-  .profile-text {
-    max-width: 100%;
+  .profile-title {
+    font-size: 2.5rem;
   }
 
-  .profile-btn,
-  .social-container {
-    align-items: center;
+  .profile-role {
+    font-size: 1.4rem;
+  }
+
+  .profile-description {
+    font-size: 1.1rem;
+  }
+
+  .profile-btn {
+    display: flex;
     justify-content: center;
+  }
+
+  .social-container {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .image-container img {
@@ -136,9 +153,27 @@
   }
 }
 
-.profile-description {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #ccc;
-  margin-bottom: 1rem;
+/* Extra small screens (phones < 500px) */
+@media (max-width: 500px) {
+  .profile-title {
+    font-size: 2rem;
+  }
+
+  .profile-role {
+    font-size: 1.2rem;
+  }
+
+  .profile-description {
+    font-size: 1rem;
+  }
+
+  .resume {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .social-container img {
+    width: 40px;
+    height: 40px;
+  }
 }
